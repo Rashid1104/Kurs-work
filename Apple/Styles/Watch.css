@@ -7,7 +7,7 @@
 .header{
     width: 100%;
     height: 200px;
-    background-color: #ffffff;
+    background-color: #FAFAFC;
     padding: 8px 0px;
 }
 
@@ -35,7 +35,7 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-    font-size: 14.5px;
+    font-size: 12.5px;
     gap: 40px;
 }
 .new{
@@ -83,7 +83,7 @@
   
   .video-wrapper video {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
   }
   
@@ -123,38 +123,43 @@
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    color: #fff;
 }
 
 .img-1 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdtFyzfMRWwBlz3fExljHzH-OKLCLKKj7uA&s");
+  background-image: url("https://www.apple.com/v/watch/bq/images/overview/consider/feature_health__b2yo83wkzoaa_xlarge.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
 }
 .img-2 {
-  background-image: url("https://i1.sndcdn.com/artworks-000213561072-k5fdxt-t1080x1080.jpg");
+  background-image: url("https://www.apple.com/v/watch/bq/images/overview/consider/feature_fitness__b5owsglf0ieu_xlarge.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
 }
 .img-3 {
-  background-image: url("https://media.tenor.com/qh1sBHpm1VUAAAAM/shrek-donkey.gif");
+  background-image: url("https://www.apple.com/ecc-shared/watch/images/overview/consider/feature_connectivity__cwtqydvy2laq_xlarge.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
 }
 .img-4 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagEnEkSOJeKZacvkA3M3zfdpiLx3O6V1GHw&s");
+  background-image: url("https://www.apple.com/v/watch/bq/images/overview/consider/feature_safety__gln97xcew2em_xlarge.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
 }
 
+.img-1{
+  color: #fff;
+}
+.img-2 .img-3 .img-4{
+    color: #000;
+}
 
 .plus {
     position: absolute;
@@ -191,8 +196,7 @@ font-size: large;
 
 /* section 4 */
 .section-4{
-    margin-bottom: 100px;
-
+    margin-bottom: 120px;
 }
 .accordion {
   width: 540px;
@@ -244,33 +248,40 @@ font-size: large;
 .section-5{
   margin-top: 50px;
   margin-bottom: 100px;
-  padding-bottom: 80px;
-  background-color: #F5F5F7;
 }
  .col-card{
   flex: 0 0 calc(47% - 10px); 
   width: 100%;
-  height: 520px;
-  background-color: #ffffff;
+  height: 460px;
+  background-color: #FAFAFA;
   border-radius: 10px;
   text-align: center;
  }
-.all-gap{
-  gap: 20px;
-}
- .col-card h2{
-  padding-top: 30px;
+ .bac-img{
+    background-image: url("https://www.apple.com/ecc-shared/watch/images/overview/essentials/banner_airpods__bobqeod4vk1y_xlarge.jpg");
+    width: 100%;
+    height: 3000px;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
  }
- .col-card p{
-  padding: 10px 0;
+ .Magic-runs{
+    padding-top: 50px;
  }
- .card-image {
-  /* padding-top: 30px; */
-  width: 100%;
-  height: 370px;
-  object-fit: contain; 
+ .all-col{
+    background-color: #F5F5F7;
+    max-width: 100%;
+    height: 620px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+ }
+.all-col p{
+    padding: 15px 0;
 }
+
 .links{
+    padding-top: 20px;
   text-decoration: none;
   transition: all 0.5s;
   padding-top: 10px;
@@ -283,6 +294,7 @@ font-size: large;
 /* section 6 */
 .section-6{
   background-color: #FAFAFA;
+  padding-bottom: 100px;
 }
 .footer-columns {
   display: flex;
