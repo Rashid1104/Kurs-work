@@ -54,112 +54,170 @@
 }
 
 /* section 2 */
-.section-2{
-    padding: 30px 0;
-    width: 100%;
-    background-color: #F5F5F7;
+.section-2 {
+  padding: 30px 0;
+  width: 100%;
+  background-color: #F5F5F7;
 }
-.all-videos{
-    gap: 15px;
+
+.all-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Добавляет отступы между видео и текстом */
+  align-items: center; /* Выравнивает элементы по центру */
 }
-  .video-wrapper {
-    position: relative;
-    width: 95%;
-    margin: 0 auto;
-    height: 88vh;
-    overflow: hidden;
-    border-radius: 20px;
-    transition: all 0.5s ease;
-    padding-bottom: 20px;
+
+.video-wrapper {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  height: 88vh;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  padding-bottom: 20px;
+}
+
+.video-wrapper.shrink {
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.video-wrapper video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.control-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  background: rgba(210, 199, 199, 0.6);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 14px;
+}
+
+.control-button:hover {
+  background: rgba(215, 203, 203, 0.8);
+}
+
+.text-in-video {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 999;
+  color: #fff;
+}
+
+.first-text {
+  color: #fff;
+}
+
+.first-text h1 {
+  font-size: 4.5rem;
+}
+
+.first-text p {
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.ab-links {
+  position: absolute;
+  bottom: 30px;
+  left: 1230px;
+}
+
+.learn-more-2 {
+  margin-top: 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 140px;
+  height: 42px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+}
+
+.agusha {
+  margin: 20px;
+}
+
+.photo-wrapper {
+  background-image: url("https://www.apple.com/v/airpods/x/images/overview/pro_endframe__e2wscfy18pme_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 95%;
+  margin: 0 auto;
+  height: 88vh;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  /* flex-direction: column; */
+  gap: 15px; 
+  padding: 20px;
+}
+
+.photo-wrapper .photo-text {
+  /* text-align: center; */
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+.photo-wrapper .photo-text h1 {
+font-size: 4rem;
+}
+.photo-wrapper .photo-text p {
+  font-size: 1.3rem;
   }
   
-  .video-wrapper.shrink {
-    width: 90%; 
-    height: 90%;
-    top: 50%;   
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 20px;
-    overflow: hidden;
-    z-index: 999;
-  }
-  
-  .video-wrapper video {
-    width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
-  }
-  
-  .control-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 10px 15px;
-    background: rgba(210, 199, 199, 0.6);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 14px;
-  }
-  
-  .control-button:hover {
-    background: rgba(215, 203, 203, 0.8);
-  }
-  .text-in-video{
-    width: 100%;
-    position: absolute;
-    bottom: 15px;
-    z-index: 999;
 
-  }
-.text-in-video{
-    position: absolute;
-bottom: 40px;
-    left: 40px;
+.photo-wrapper .link-s {
+  text-align: center;
 }
-.first-text{
-    color: #fff;
+.photo-img{
+  background-image: url('../Images/AirPads.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 96%;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 88vh;
 }
-.first-text h1{
-font-size: 4.5rem;
+.learn-more-2 {
+  margin-top: 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 140px;
+  height: 42px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
 }
-.first-text p{
-    padding: 10px 0;
-    font-size: 1.4rem;
-}
-  .ab-links{
-    position: absolute;
-    bottom: 30px;
-    right: 80px;
-  }
-  .learn-more-2{
-    margin-top: 15px;
-background-color: #ffffff;
-color: rgb(0, 0, 0);
-width: 140px;
-height: 42px;
-font-size: 1.1rem;
-border: none;
-border-radius: 25px;
-
-}
-.agusha{
-    margin: 20px;
-}
-.photo-wrapper{
-    background-image: url("https://www.apple.com/v/airpods/x/images/overview/pro_endframe__e2wscfy18pme_large_2x.jpg");
-    background-position: center;
-    background-size: cover;
-background-repeat: no-repeat;
-    width: 95%;
-    margin: 0 auto;
-    height: 88vh;
-    border-radius: 20px;
-    display: flex;
-
-
+.learn-more-3{
+  margin-top: 15px;
+  background-color: #0076DF;
+  color: rgb(255, 255, 255);
+  width: 140px;
+  height: 42px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 30px;
 }
 
   /* section 3 */
@@ -182,35 +240,39 @@ background-repeat: no-repeat;
 }
 
 .img-1 {
-  background-image: url("https://www.apple.com/v/mac/home/cb/images/overview/consider/mac_performance__dh5hyac1zf8m_xlarge.jpg");
+  background-image: url("https://www.apple.com/v/airpods/x/images/overview/consider/card_noise_cancellation__bcl69t06noci_large_2x.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
+    color: #fff;
 }
 .img-2 {
-  background-image: url("https://www.apple.com/ecc-shared/mac/home/images/overview/consider/mac_iphone__gh1tblkt6bqm_xlarge.jpg");
+  background-image: url("https://www.apple.com/v/airpods/x/images/overview/consider/card_spatial_audio__uga42js3h4ya_large_2x.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
+    color: #fff;
 }
 .img-3 {
-  background-image: url("http://apple.com/v/mac/home/cb/images/overview/consider/mac_compatibility__cu59oukz81ci_xlarge.jpg");
+  background-image: url("https://www.apple.com/v/airpods/x/images/overview/consider/card_hearing_health__ss2uxyv3j5m6_large_2x.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
-    display: block;
+    display: block;  
+    color: #fff;
 }
 .img-4 {
-  background-image: url("https://www.apple.com/ecc-shared/mac/home/images/overview/consider/mac_intelligence__esfi0qmvis6e_xlarge.jpg");
+  background-image: url("https://www.apple.com/ecc-shared/airpods/images/overview/consider/card_iphone__c7gcuw15pxiu_large_2x.jpg");
     width: 300px;
     height: 600px;
     object-fit: cover;
     display: block;
+    color: #fff;
 }
 
-.img-1{
+.img-1 .img-2 .img-3 .img-4{
   color: #fff;
 }
 
